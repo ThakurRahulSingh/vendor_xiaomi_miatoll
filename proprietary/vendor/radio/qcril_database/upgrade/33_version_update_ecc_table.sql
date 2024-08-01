@@ -3,30 +3,23 @@
   All Rights Reserved.
   Confidential and Proprietary - Qualcomm Technologies, Inc.
 */
+
 BEGIN TRANSACTION;
+
 INSERT OR REPLACE INTO qcril_properties_table (property, value) VALUES ('qcrildb_version', 33);
 
-DELETE FROM  qcril_emergency_source_mcc_table where MCC = '213';
 
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '422' AND MNC = '02' AND NUMBER = '999';
+DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '422' AND MNC = '03' AND NUMBER = '999';
+DELETE FROM qcril_emergency_source_mcc_table where MCC = '422' AND NUMBER = '112';
+DELETE FROM qcril_emergency_source_mcc_table where MCC = '422' AND NUMBER = '911';
+DELETE FROM qcril_emergency_source_mcc_table where MCC = '422' AND NUMBER = '999';
+DELETE FROM qcril_emergency_source_voice_table where MCC = '422' AND NUMBER = '9999';
 
-INSERT INTO "qcril_emergency_source_mcc_table" VALUES('213','110','','');
-INSERT INTO "qcril_emergency_source_mcc_table" VALUES('213','115','','');
-INSERT INTO "qcril_emergency_source_mcc_table" VALUES('213','116','','');
-INSERT INTO "qcril_emergency_source_mcc_table" VALUES('213','117','','');
-INSERT INTO "qcril_emergency_source_mcc_table" VALUES('213','118','','');
-INSERT INTO "qcril_emergency_source_mcc_table" VALUES('213','175','','');
-INSERT INTO "qcril_emergency_source_mcc_table" VALUES('213','181','','');
-
-
-DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '510' AND MNC = '11' AND NUMBER = '115';
-DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '510' AND MNC = '11' AND NUMBER = '119';
-INSERT INTO "qcril_emergency_source_mcc_mnc_table" VALUES('510','11','115','','');
-INSERT INTO "qcril_emergency_source_mcc_mnc_table" VALUES('510','11','119','','');
-
-DELETE FROM qcril_emergency_source_escv_nw_table where MCC = '257';
-INSERT INTO "qcril_emergency_source_escv_nw_table" VALUES('257','01','101','4');
-INSERT INTO "qcril_emergency_source_escv_nw_table" VALUES('257','01','102','1');
-INSERT INTO "qcril_emergency_source_escv_nw_table" VALUES('257','01','103','2');
-INSERT INTO "qcril_emergency_source_escv_nw_table" VALUES('257','01','104','8');
+INSERT INTO qcril_emergency_source_mcc_table VALUES('422','112','','');
+INSERT INTO qcril_emergency_source_mcc_table VALUES('422','911','','');
+INSERT INTO qcril_emergency_source_mcc_table VALUES('422','999','','');
+INSERT INTO qcril_emergency_source_voice_table VALUES('422','9999','','full');
 
 COMMIT TRANSACTION;
+
