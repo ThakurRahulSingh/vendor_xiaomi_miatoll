@@ -1149,14 +1149,14 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuce-V1.1-java \
     vendor.qti.ims.rcsuce-V1.2-java \
     vendor.qti.ims.rcsuceaidlservice-V1-java \
-    android.hardware.neuralnetworks@1.3-service-qti-hta \
-    android.hardware.neuralnetworks@1.3-service-qti \
-    manifest_android.hardware.drm@1.3-service.widevine \
-    vendor.qti.gnss@4.0-service \
-    vendor.xiaomi.hardware.misys@1.0 \
-    vendor.xiaomi.hardware.misys@2.0 \
-    vendor.xiaomi.hardware.misys@3.0 \
-    vendor.xiaomi.hardware.misys@4.0
+    android.hardware.neuralnetworks@1.3-service-qti-hta.xml \
+    android.hardware.neuralnetworks@1.3-service-qti.xml \
+    manifest_android.hardware.drm@1.3-service.widevine.xml \
+    vendor.qti.gnss@4.0-service.xml \
+    vendor.xiaomi.hardware.misys@1.0.xml \
+    vendor.xiaomi.hardware.misys@2.0.xml \
+    vendor.xiaomi.hardware.misys@3.0.xml \
+    vendor.xiaomi.hardware.misys@4.0.xml
 
 PRODUCT_PACKAGES += \
     libimscamera_jni_libimscamera_jni_symlink64 \
