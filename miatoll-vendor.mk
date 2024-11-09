@@ -113,7 +113,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
-    vendor/xiaomi/miatoll/proprietary/vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.4-service_64.rc \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
@@ -475,16 +474,7 @@ PRODUCT_PACKAGES += \
     libasphere \
     libshoebox \
     vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
-    android.hardware.camera.provider@2.4-external \
     android.hardware.camera.provider@2.4-legacy \
-    camera.device@1.0-impl \
-    camera.device@3.2-impl \
-    camera.device@3.3-impl \
-    camera.device@3.4-external-impl \
-    camera.device@3.4-impl \
-    camera.device@3.5-external-impl \
-    camera.device@3.5-impl \
-    camera.device@3.6-external-impl \
     com.qti.eeprom.sunny_gc8034 \
     com.qti.sensor.curtana_gc02m1 \
     com.qti.sensor.curtana_gc8034 \
@@ -580,7 +570,6 @@ PRODUCT_PACKAGES += \
     deviceInfoServiceModule \
     ftm_fm_lib \
     android.hardware.bluetooth@1.0-impl-qti \
-    android.hardware.camera.provider@2.4-impl \
     android.hardware.gatekeeper@1.0-impl-qti \
     camera.qcom \
     com.qti.chi.override \
@@ -808,7 +797,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.cacert@1.0 \
-    vendor.qti.hardware.camera.device@1.0_vendor \
     vendor.qti.hardware.camera.device@3.5 \
     vendor.qti.hardware.cvp@1.0 \
     vendor.qti.hardware.data.cne.internal.api@1.0_vendor \
@@ -1033,7 +1021,6 @@ PRODUCT_PACKAGES += \
     dspservice \
     hvdcp_opti \
     android.hardware.bluetooth@1.0-service-qti \
-    android.hardware.camera.provider@2.4-service_64 \
     android.hardware.drm@1.3-service.widevine \
     android.hardware.gatekeeper@1.0-service-qti \
     android.hardware.keymaster@4.1-service-qti \
