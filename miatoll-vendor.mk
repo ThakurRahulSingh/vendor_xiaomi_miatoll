@@ -726,6 +726,7 @@ PRODUCT_PACKAGES += \
     libril-qc-logger \
     libril-qc-ltedirectdisc \
     libril-qc-radioconfig \
+    libril-qcril-hook-oem \
     librilqmiservices \
     librpmb \
     libsdedrm \
